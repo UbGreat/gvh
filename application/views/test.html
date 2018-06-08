@@ -5,54 +5,9 @@
     <body>
       <div>
 
-        <div class="row page-content">
-          <div class="col-md-3">
-
-          </div>
-          <div class="col-md-6">
-            <br>
-             <h2 class="text-center">Register Form</h2>
-             <hr>
-             <br>
-             <?php if(validation_errors()) { ?>
-               <div class="alert alert-danger">
-                 <?php echo validation_errors(); ?>
-               </div>
-             <?php } ?>
-             <?php echo form_open('candidate/create'); ?>
-
-               <div class="form-group">
-                  <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name">
-               </div>
-               <div class="form-group">
-                  <input type="text" name="oname" class="form-control" id="oname" placeholder="Other Names">
-               </div>
-               <div class="form-group">
-                  <input type="text" name="sname" class="form-control" id="sname" placeholder="Surname">
-               </div>
-               <div class="form-group">
-                  <input type="text" name="email" class="form-control" id="email" placeholder="Email">
-               </div>
-               <div class="form-group">
-                  <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone">
-               </div>
-               <div class="form-group">
-                  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-               </div>
-               <div class="form-group">
-                  <input type="password" name="confirm_password" class="form-control" id="confirm-password" placeholder="Confirm Password">
-               </div>
-               <div class="form-group pull-right">
-                  <button type="submit" id="register" class="btn btn-primary">Register</button>
-               </div>
-             </div>
-             <div class="col-md-3">
-
-             </div>
-             <?php echo form_close(); ?>
-
-
-          </div>
+        <p>
+          This page is for testing any code. It is controlled by Test.php in the controller.
+        </p>
 
       </div>
     </body>
