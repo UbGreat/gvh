@@ -25,20 +25,13 @@
 
     }
 
-    //Check if candidate is already registered
-    // public function is_registered($email){
-    // $query =  $this->Candidate->is_registered($email);
-    // if($query == true){
-    //   //throw error
-    // }
-
     // Register
     public function register()
     {
     $data['title'] = 'Register - Tech Arise';
           $data['metaDescription'] = 'Register';
           $data['metaKeywords'] = 'Register';
-          $data['page'] = 'test';
+          $data['page'] = 'signup';
           $data['title'] = '';
   		    $this->load->view('template.html', $data);
     }
