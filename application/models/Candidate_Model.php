@@ -67,6 +67,21 @@
         return false;
       }
     }
+
+    //Login Verification
+    public function verify_login($data){
+      $query = $this->db->where([
+          'email' => $data['email'],
+          'password' => $data['password']
+        ])
+        ->get('candidate');
+      if($query->num_rows() > 0){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
   }
 
 ?>
