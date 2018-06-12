@@ -38,7 +38,7 @@
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/colors/red.css" media="screen" />
 
-  </head>
+      </head>
 
   <body>
       <!-- Header Section Start -->
@@ -238,8 +238,8 @@
                   </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right float-right">
-                  <li class="left"><a href="post-job.html"><i class="ti-pencil-alt"></i> Post A Job</a></li>
-                  <li class="right"><a href="my-account.html"><i class="ti-lock"></i>  Log In</a></li>
+                  <li class="left"><a href="<?php echo base_url(); ?>post-job.html"><i class="ti-pencil-alt"></i> Post A Job</a></li>
+                  <li class="right"><a href="<?php echo base_url(); ?>login.html"><i class="ti-lock"></i>  Log In</a></li>
                 </ul>
               </div>
             </div>
@@ -324,16 +324,16 @@
                 <li><a href="<?php echo base_url(); ?>browse-resumes.html">Browse Resumes</a></li>
                 <li><a href="<?php echo base_url(); ?>contact.html">Contact</a></li>
                 <li><a href="<?php echo base_url(); ?>faq.html">Faq</a></li>
-                <li><a href="<?php echo base_url(); ?>my-account.html">Login</a></li>
+                <li><a href="<?php echo base_url(); ?>login.html">Login</a></li>
             </ul><!--- End Menu -->
           </div> <!--- End Off Canvas Side Menu -->
           <div class="tbtn wow pulse" id="menu" data-wow-iteration="infinite" data-wow-duration="500ms" data-toggle="offcanvas" data-target=".navmenu">
             <p><i class="ti-files"></i> All Pages</p>
           </div>
       </div>
-              
+
     <?php $this->load->view($page.'.html'); ?>
-              
+
 
     <!-- Footer Section Start -->
     <footer>
