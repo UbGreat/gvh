@@ -24,4 +24,22 @@ class Academy extends CI_Controller {
         $data['title'] = '';
 		$this->load->view('template.html', $data);
 	}
+  public function courses()
+	{
+        $data['page'] = 'gvh-academy/courses';
+        $data['title'] = '';
+		$this->load->view('template.html', $data);
+	}
+  public function instructors()
+  {
+        $data['page'] = 'gvh-academy/instructors';
+        $data['title'] = '';
+    $this->load->view('template.html', $data);
+  }
+  public function affiliates()
+  {
+        $data['page'] = 'gvh-academy/affiliates';
+        $data['title'] = '';
+    $this->load->view('template.html', $data);
+  }
 }
