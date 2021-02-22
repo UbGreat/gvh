@@ -108,7 +108,16 @@ class Candidate extends CI_Controller {
 
 			 $res = $this->Candidate_Model->verify_login($data);
 			 if($res == true){
-				 echo "Login Successful";
+				 echo "Candidate Login Successful";
+			 }
+			 elseif ($this->Employer_Model->verify_login($data)) {
+			 	echo "Employer Login Successful";
+			 }
+			 elseif ($this->Affiliate_Model->verify_login($data)) {
+			 	echo "Affiliate Login Successful";
+			 }
+			 elseif ($this->Admin_Model->verify_login($data)) {
+			 	echo "Admin Login Successful";
 			 }
 			 else{
 				 $error = "Email or password is incorrect!";

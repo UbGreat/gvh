@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Academy extends CI_Controller {
+class Admin extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,26 +20,8 @@ class Academy extends CI_Controller {
 	 */
 	public function index()
 	{
-        $data['page'] = 'gvh-academy/gvh-home';
+        $data['page'] = 'admin_profile';
         $data['title'] = '';
 		$this->load->view('template.html', $data);
 	}
-  public function courses()
-	{
-        $data['page'] = 'gvh-academy/courses';
-        $data['title'] = '';
-		$this->load->view('template.html', $data);
-	}
-  public function instructors()
-  {
-        $data['page'] = 'gvh-academy/instructors';
-        $data['title'] = '';
-    $this->load->view('template.html', $data);
-  }
-  public function affiliates()
-  {
-        $data['page'] = 'gvh-academy/affiliates';
-        $data['title'] = '';
-    $this->load->view('template.html', $data);
-  }
 }
